@@ -1,4 +1,8 @@
-[gd_scene format=3 uid="uid://cbgdax2dsm8rq"]
+[gd_scene load_steps=3 format=3 uid="uid://cbgdax2dsm8rq"]
+
+[ext_resource type="Script" path="res://character_body_2d.gd" id="1_txg6v"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_48umw"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -6,3 +10,9 @@
 offset_right = 356.0
 offset_bottom = 210.0
 text = "moik was here"
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+script = ExtResource("1_txg6v")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+shape = SubResource("CapsuleShape2D_48umw")
