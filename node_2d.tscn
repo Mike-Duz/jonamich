@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://cbgdax2dsm8rq"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TextEdit" type="TextEdit" parent="."]
+offset_right = 356.0
+offset_bottom = 210.0
+text = "moik was here"
